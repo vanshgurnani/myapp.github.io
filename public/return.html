@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Return</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    
+
+    
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="issue.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ms-">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Book Store</a>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="issue.html" class="nav-link">Issue</a></li>
+                <li class="nav-item"><a href="return.html" class="nav-link">Return</a></li>
+                <li class="nav-item"><a href="Member.html" class="nav-link">Membership</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <li class="nav-item">
+                  <a href="/logout" class="nav-link btn btn-danger" style="color: white; font-size: 18px; font-weight: bold;" onclick="logout()">Log Out</a>
+                </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+      </nav>
+
+<main class="form-signin w-100 m-auto">
+  <form action="/return" method="post" id="returnform">
+    <h1 style="color: aliceblue; font-size: 35px; font-weight: bold; text-decoration: none">Return Form</h1>
+    <br>
+    <label class="" style="color: aliceblue; font-size: 20px; font-weight: bold; text-decoration: none">Return Date:</label>
+    <input type="date" id="rdate" class="form-control n1" name="rdate" placeholder="return date">
+    <input type="text" id="bname" name="bname"  class="form-control n1"  placeholder="BookName">
+    <input type="number" id="sno" name="sno"  placeholder="Serial No." class="form-control n1" >
+
+      <br>
+
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="addReturn(event)">Return</button>
+  </form>
+  <br>
+  <button class="w-100 btn btn-lg btn-danger" type="submit" ><a href="/rtable" style="color: aliceblue; font-size: 18px; font-weight: bold; text-decoration: none">Show tables</a></button>
+
+  <!-- <h2>Returns</h2>
+    <table id="return-table"></table> -->
+</main>
+</main>
+
+
+  <!-- <script src="return.js"></script> -->
+  </body>
+</html>
