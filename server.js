@@ -19,12 +19,14 @@ app.use(session({
 
 
 // Create a MySQL connection pool
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'mysql123',
-  database: 'lms'
-});
+const pool = mysql.createPool({ 
+  host: 'sql6.freesqldatabase.com', 
+  user: 'sql6684794', 
+  password: '1hmVtBHrqF', 
+  database: 'sql6684794', 
+  port: 3306, 
+  connectionLimit: 10
+});     
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
